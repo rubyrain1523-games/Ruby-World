@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ruby World</title><link rel="stylesheet" href="css/style.css"></head><body>
+<main id="menu" class="screen"><h1 class="logo">RUBY WORLD</h1><nav>
+<button data-go="play">PLAY</button><button data-go="create">CREATE</button><button data-go="course">COURSE WORLD</button><button data-go="profile">PROFILE</button><button data-go="settings">SETTINGS</button></nav></main>
+<section id="panel" class="screen hidden"><div class="card"><h2 id="panelTitle"></h2><div id="panelBody"></div><button id="panelBack">BACK</button></div></section>
+<section id="gameScreen" class="screen hidden"><canvas id="gameCanvas" width="960" height="540"></canvas></section>
+<section id="editorScreen" class="screen hidden"><div id="toolbar">
+<button data-tool="block">BLOCK</button><button data-tool="platform">PLATFORM</button><button data-tool="enemy">ENEMY</button><button data-tool="hazard">HAZARD</button><button data-tool="goal">GOAL</button><button data-tool="spawn">SPAWN</button><button data-tool="erase">ERASER</button>
+<span class="sep"></span><button id="eUndo">UNDO</button><button id="eRedo">REDO</button><button id="eGrid">GRID</button><button id="eZoomIn">+</button><button id="eZoomOut">-</button><button id="eClear">CLEAR</button>
+<span class="sep"></span><button id="eNew">NEW</button><input id="eName" aria-label="Level name" value="My Level"><button id="eSave">SAVE</button><select id="eLoad" aria-label="Load level"></select><button id="eTest">TEST</button><button id="eExit">EXIT</button></div>
+<canvas id="editorCanvas" width="960" height="540"></canvas><p class="hint">Click/drag to place. Right-click erases. Wheel scrolls, Ctrl+wheel zooms. Ctrl+Z/Y undo/redo, Ctrl+S save.</p></section>
+<script type="module" src="js/main.js"></script></body></html>
